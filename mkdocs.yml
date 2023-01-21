@@ -9,11 +9,14 @@ site_dir: docs
 nav:
     - Home: index.md
     - Code:
+        - CSS: code/css.md
         - Godot: code/godot.md
         - Python: code/python.md
 theme:
-    name: solar
+    name: lux
     nav_style: dark
+extra_css:
+    - theme.css
 markdown_extensions:
     - toc:
         permalink: "#"
