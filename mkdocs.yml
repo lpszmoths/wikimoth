@@ -1,0 +1,18 @@
+site_name: Wikimoth
+site_url: https://moths.github.io/
+site_author: Page of Moths
+site_description: Personal wiki
+repo_name: Github
+repo_url: https://github.com/moths/wikimoth
+nav:
+    - Home: index.md
+    - Code:
+        - Godot: code/godot.md
+        - Python: code/python.md
+theme:
+    name: solar
+    nav_style: dark
+markdown_extensions:
+    - toc:
+        permalink: "#"
+
