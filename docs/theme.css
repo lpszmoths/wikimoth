@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Subway Haze';
+    src: local("Subway Haze"), url("./fonts/Subway_Haze_1.1.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Leander';
+    src: local("Leander"), url("./fonts/Leander.ttf") format("truetype");
+}
+
+body {
+    background: #ddd url(./img/mothbg.jpg);
+    background-size: cover;
+
+    font-size: 1em;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    letter-spacing: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Subway Haze', serif;
+    text-transform: none;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.33em; }
+h4 { font-size: 1em; }
+
+pre {
+}
+
+pre,
+.bg-secondary,
+.dropdown-menu {
+    background: #f6edea url(./img/mothbg-light.jpg);
+    background-size: 100vmin;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    border-radius: .3em;
+}
+
+.nav-item {
+    margin-right: 0;
+}
+
+.navbar,
+.navbar.bg-dark {
+    background-color: transparent!important;
+    position: static;
+    margin-bottom: 4em;
+    font-family: Leander;
+    text-transform: uppercase;
+}
+
+.navbar:before {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: transparent url(./img/header-texture.jpg);
+    background-size: contain;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}

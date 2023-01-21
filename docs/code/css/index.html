@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Personal wiki">
+        
         <meta name="author" content="Page of Moths">
-        <link rel="canonical" href="https://lpszmoths.github.io/wikimoth/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Wikimoth</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://lpszmoths.github.io/wikimoth/code/css/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>CSS - Wikimoth</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/color-brewer.min.css">
-        <link href="theme.css" rel="stylesheet">
+        <link href="../../theme.css" rel="stylesheet">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href=".">Wikimoth</a>
+                <a class="navbar-brand" href="../..">Wikimoth</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,23 +34,23 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Code <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="code/css/" class="dropdown-item">CSS</a>
+    <a href="./" class="dropdown-item active">CSS</a>
 </li>
                                     
 <li>
-    <a href="code/godot/" class="dropdown-item">Godot</a>
+    <a href="../godot/" class="dropdown-item">Godot</a>
 </li>
                                     
 <li>
-    <a href="code/python/" class="dropdown-item">Python</a>
+    <a href="../python/" class="dropdown-item">Python</a>
 </li>
                                 </ul>
                             </li>
@@ -63,17 +63,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../.." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="code/css/" class="nav-link">
+                                <a rel="next" href="../godot/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/moths/wikimoth/edit/master/docs/index.md" class="nav-link">Edit on Github
+                                <a href="https://github.com/moths/wikimoth/edit/master/docs/code/css.md" class="nav-link">Edit on Github
                                     </a>
                             </li>
                     </ul>
@@ -94,13 +94,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#wikimoth" class="nav-link">Wikimoth</a>
+            <li class="nav-item" data-level="1"><a href="#css" class="nav-link">CSS</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#wiki-page-sample-content" class="nav-link">Wiki page sample content</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#see-also" class="nav-link">See also</a>
+            <li class="nav-item" data-level="2"><a href="#importing-a-local-or-relative-font-in-font-face" class="nav-link">Importing a local or relative font in @font-face</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -111,20 +107,13 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="wikimoth">Wikimoth<a class="headerlink" href="#wikimoth" title="Permanent link">#</a></h1>
-<p><a href="./code">Code</a></p>
-<h2 id="wiki-page-sample-content">Wiki page sample content<a class="headerlink" href="#wiki-page-sample-content" title="Permanent link">#</a></h2>
-<pre><code>---
-title: My Document
-summary: A brief description of my document.
-some_url: https://example.com
----
-This is the first paragraph of the document.
-</code></pre>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="https://www.mkdocs.org/user-guide/writing-your-docs/">Markdown layout and reference</a></li>
-</ul></div>
+<h1 id="css">CSS<a class="headerlink" href="#css" title="Permanent link">#</a></h1>
+<h2 id="importing-a-local-or-relative-font-in-font-face">Importing a local or relative font in @font-face<a class="headerlink" href="#importing-a-local-or-relative-font-in-font-face" title="Permanent link">#</a></h2>
+<pre><code>@font-face {
+    font-family: 'My Font';
+    src: local(&quot;My Font&quot;), url(&quot;./fonts-my-fonts.ttf&quot;) format(&quot;truetype&quot;);
+}
+</code></pre></div>
             </div>
         </div>
 
@@ -133,11 +122,11 @@ This is the first paragraph of the document.
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -202,8 +191,3 @@ This is the first paragraph of the document.
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.4.2
-Build Date UTC : 2023-01-21 22:16:06.572896+00:00
--->
