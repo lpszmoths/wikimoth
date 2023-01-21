@@ -4,6 +4,8 @@ site_author: Page of Moths
 site_description: Personal wiki
 repo_name: Github
 repo_url: https://github.com/moths/wikimoth
+docs_dir: src
+site_dir: docs
 nav:
     - Home: index.md
     - Code:
