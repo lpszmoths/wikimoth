@@ -13,7 +13,7 @@
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/color-brewer.min.css">
-        <link href="../../theme.css" rel="stylesheet">
+        <link href="../../no-theme.css" rel="stylesheet">
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
@@ -99,7 +99,27 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#project-structure" class="nav-link">Project structure</a>
+            <li class="nav-item" data-level="2"><a href="#finding-the-current-camera" class="nav-link">Finding the current camera</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#is-in-editor" class="nav-link">Is in editor?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#instantiating-packed-scenes" class="nav-link">Instantiating packed scenes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#raycasting-downward" class="nav-link">Raycasting downward</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#throwing-errorsexceptions" class="nav-link">Throwing errors/exceptions</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -123,13 +143,29 @@
 <li>Download and install <a href="https://github.com/godot-extended-libraries/godot-next/">godot-next</a></li>
 <li>Download and install <em>insert gizmos plugin here</em></li>
 </ol>
-<h2 id="project-structure">Project structure<a class="headerlink" href="#project-structure" title="Permanent link">#</a></h2>
-<pre><code>res://
-|-- addons/
-|-- tests/
-|-- util/
-|-- default_env.tres
-'-- icon.png
+<h2 id="finding-the-current-camera">Finding the current camera<a class="headerlink" href="#finding-the-current-camera" title="Permanent link">#</a></h2>
+<pre><code>get_viewport().get_camera()
+</code></pre>
+<h2 id="is-in-editor">Is in editor?<a class="headerlink" href="#is-in-editor" title="Permanent link">#</a></h2>
+<pre><code>if Engine.editor_hint:
+    # editor code
+</code></pre>
+<h2 id="instantiating-packed-scenes">Instantiating packed scenes<a class="headerlink" href="#instantiating-packed-scenes" title="Permanent link">#</a></h2>
+<pre><code>const MyPrefab = preload(&quot;res://path/to/prefab.tscn&quot;)
+
+var child = MyPrefab.instance()
+add_child(child)
+</code></pre>
+<h2 id="raycasting-downward">Raycasting downward<a class="headerlink" href="#raycasting-downward" title="Permanent link">#</a></h2>
+<pre><code>var raycast: RayCast = RayCast.new()
+raycast.transform.origin = Vector3(x, y, z)
+raycast.cast_to = Vector3(0, -1, 0) # default
+var collision_point: Vector3 = raycast.get_collision_point()
+var collision_normal: Vector3 = raycast.get_collision_normal()
+var collider: Object = get_collider()
+</code></pre>
+<h2 id="throwing-errorsexceptions">Throwing errors/exceptions<a class="headerlink" href="#throwing-errorsexceptions" title="Permanent link">#</a></h2>
+<pre><code>printerr(&quot;Error&quot;)
 </code></pre>
 <h2 id="making-custom-editors">Making custom editors<a class="headerlink" href="#making-custom-editors" title="Permanent link">#</a></h2>
 <pre><code>tool

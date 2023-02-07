@@ -16,7 +16,7 @@ theme:
     name: lux
     nav_style: dark
 extra_css:
-    - theme.css
+    - no-theme.css
 markdown_extensions:
     - toc:
         permalink: "#"
